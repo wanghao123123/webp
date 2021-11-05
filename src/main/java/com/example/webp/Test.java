@@ -5,6 +5,8 @@ import net.coobird.thumbnailator.name.Rename;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 
 /**
  * @author hao.wong
@@ -20,5 +22,8 @@ public class Test {
                 .outputFormat("webp")
                 .outputQuality(1.0f)
                 .toFile(thumbnailImage);
+
+        System.err.println();
+
     }
 }
